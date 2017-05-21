@@ -5,10 +5,13 @@ var vel = 140
 var nova_anima = ""
 var animacao = ""
 var shooter = false
+var tiro_simples = preload("res://Scripts/Classes/tiro_simples.gd")
+var arma
 
 func _ready():
 	add_to_group(game.GRUPO_PLAYER)
 	get_node("interaction_area").add_to_group(game.GRUPO_INTERACTION)
+	arma = tiro_simples.new(self)
 	set_fixed_process(true)
 
 func _fixed_process(delta):
@@ -59,10 +62,15 @@ func _fixed_process(delta):
 	
 	if shooter:
 		nova_anima = "shoot"
+		if Input.is_action_pressed("ui_accept"):
+			arma.dispara(delta)
+		
 	elif (walking):
 		nova_anima = "walk"
 	elif (!walking && !shooter):
 		nova_anima = "idle"
+	
+	arma.atualiza(delta)
 	
 	if (animacao != nova_anima):
 		get_node("anim").play(nova_anima)

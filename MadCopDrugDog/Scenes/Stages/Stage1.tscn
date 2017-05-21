@@ -429,16 +429,17 @@ func _ready():
 
 
 func _on_teto_geral_area_enter( area ):
-	#print(area.get_owner().get_groups())
-	if area.get_owner().is_in_group(game.GRUPO_PLAYER):
-		get_node(\"teto\").hide()
-		print(\"remover teto\")
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").hide()
+			print(\"remover teto\")
 
 
 func _on_teto_geral_area_exit( area ):
-	if area.get_owner().is_in_group(game.GRUPO_PLAYER):
-		get_node(\"teto\").show()
-		print(\"voltar teto\")
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").show()
+			print(\"voltar teto\")
 "
 
 [sub_resource type="ConvexPolygonShape2D" id=83]
@@ -461,15 +462,17 @@ func _ready():
 	pass
 
 func _on_banheiro_area_enter( area ):
-	if area.get_owner().is_in_group(game.GRUPO_PLAYER):
-		get_node(\"teto\").hide()
-		print(\"remover teto\")
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").hide()
+			print(\"remover teto\")
 
 
 func _on_banheiro_area_exit( area ):
-	if area.get_owner().is_in_group(game.GRUPO_PLAYER):
-		get_node(\"teto\").show()
-		print(\"voltar teto\")
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").show()
+			print(\"voltar teto\")
 "
 
 [node name="stage" type="Node"]
@@ -494,7 +497,6 @@ stream/buffering_ms = 500
 
 [node name="cena" type="Sprite" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 6.5614, -107.332 )
 texture = ExtResource( 2 )
 

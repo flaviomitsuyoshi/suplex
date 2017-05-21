@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=1]
 
-[sub_resource type="ConvexPolygonShape2D" id=3]
+[sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -129.221, -18.878, 35.7343, -18.9856, 33.6254, 134.726, -129.662, 134.726 )
@@ -16,21 +16,23 @@ func _ready():
 
 
 func _on_teto_banheiro_area_enter( area ):
-	if area.get_owner().is_in_group(game.GRUPO_PLAYER):
-		get_node(\"teto\").hide()
-		print(\"remover teto\")
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").hide()
+			print(\"remover teto\")
 
 
 func _on_teto_banheiro_area_exit( area ):
-	if area.get_owner().is_in_group(game.GRUPO_PLAYER):
-		get_node(\"teto\").show()
-		print(\"voltar teto\")
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").show()
+			print(\"voltar teto\")
 "
 
 [node name="teto_banheiro" type="Area2D"]
 
 input/pickable = true
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )

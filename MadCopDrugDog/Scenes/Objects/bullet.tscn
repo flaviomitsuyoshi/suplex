@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://Scripts/bullet.gd" type="Script" id=1]
+[ext_resource path="res://Audio/Sample/275151_gun-shot.wav" type="Sample" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 0.855758
+height = 1.02567
+
+[sub_resource type="SampleLibrary" id=2]
+
+samples/gunshot = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 2 )
+}
+
+[node name="bullet" type="Node2D"]
+
+[node name="area" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 1 )
+
+[node name="poly" type="Polygon2D" parent="area"]
+
+polygon = Vector2Array( 0.0180764, -1.50214, -0.722483, -0.943686, -0.868166, -0.00888181, -0.783184, 0.889501, -0.273291, 1.33869, 0.248743, 1.33869, 0.795056, 0.889501, 0.892179, -0.0210223, 0.710074, -0.967967 )
+uv = Vector2Array(  )
+color = Color( 0.683594, 0.584793, 0.584793, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="shape" type="CollisionShape2D" parent="area"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="sample" type="SamplePlayer2D" parent="area"]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 2 )
+config/pitch_random = 0.0
+
+[connection signal="body_enter" from="area" to="area" method="_on_area_body_enter"]
+
+
