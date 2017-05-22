@@ -12,8 +12,9 @@ func _process(delta):
 		if Input.is_action_pressed("ui_accept"):
 			var dialogbox = pre_dialog_box.instance()
 			#dialogbox.set_global_pos(Vector2(0, 0))
-			dialogbox.get_node("text_label").setDialog(["Boa noite!", "O que você quer?", "Pode checar os quartos então."])
+			dialogbox.get_node("text_label").setDialog(["Boa noite!", "O que você quer?", "Vou checar os quartos."])
 			dialogbox.get_node("text_label").setFaces([game.FACE_TREVOR, game.FACE_MOTEL_MAN, game.FACE_TREVOR])
+			dialogbox.get_node("text_label").setTitles(["Trevor", "Dono do Motel", "Trevor"])
 			game.getHUD().add_child(dialogbox)
 			print("mensagem")
 

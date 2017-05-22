@@ -11,6 +11,7 @@ func _init(player):
 func dispara(delta):
 	if ultimo_disparo <= 0:
 		cria_tiro(player.get_node("posicao_atirar/posicao_tiro"))
+		player.get_node("sample").play("gunshot")
 		ultimo_disparo = intervalo
 	pass
 

@@ -18,6 +18,21 @@ texture/rotation = 0.0
 invert/enable = false
 invert/border = 100.0
 
+[node name="title_label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 176.0
+margin/top = 448.0
+margin/right = 976.0
+margin/bottom = 478.0
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="text_label" type="RichTextLabel" parent="."]
 
 process/pause_mode = 2
@@ -26,7 +41,7 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 176.0
-margin/top = 448.0
+margin/top = 480.0
 margin/right = 976.0
 margin/bottom = 560.0
 bbcode/enabled = true

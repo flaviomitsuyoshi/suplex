@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://Scripts/trevor.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Character/Trevor/Trevor Walk.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Character/Trevor/Trevor Aim.png" type="Texture" id=3]
+[ext_resource path="res://Audio/Sample/275151_gun-shot.wav" type="Sample" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -113,9 +114,17 @@ tracks/2/keys = {
 "values": [ false ]
 }
 
+[sub_resource type="SampleLibrary" id=6]
+
+samples/gunshot = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
+
 [node name="trevor" type="KinematicBody2D"]
 
-editor/display_folded = true
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 2.07641, 0, 0, 0.810543, -0.296675, 1.26405 )
@@ -197,10 +206,22 @@ drag_margin/bottom = 0.2
 
 [node name="posicao_atirar" type="Sprite" parent="."]
 
+editor/display_folded = true
 texture = ExtResource( 3 )
 
 [node name="posicao_tiro" type="Position2D" parent="posicao_atirar"]
 
 transform/pos = Vector2( 0.0486832, -35.4362 )
+
+[node name="sample" type="SamplePlayer2D" parent="."]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 6 )
+config/pitch_random = 0.0
 
 

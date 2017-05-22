@@ -2,6 +2,7 @@ extends RichTextLabel
 
 var dialog = ["Hey! My name is aaa.", "Page 2", "fim"] setget setDialog
 var faces = [game.FACE_TREVOR, game.FACE_MOTEL_MAN, game.FACE_TREVOR] setget setFaces
+var titles = ["Trevor", "Motel man", "Trevor"] setget setTitles
 var page = 0
 
 func _ready():
@@ -9,6 +10,7 @@ func _ready():
 	set_visible_characters(0)
 	set_process_input(true)
 	get_owner().get_node("photo").get_texture().load(game.FACE_TREVOR)
+	get_owner().get_node("title_label").set_text("Trevor")
 	game.DIALOG_BOX = true
 	get_tree().set_pause(true)
 	print("Criou caixa de dialogo!")
@@ -29,6 +31,8 @@ func _input(event):
 				set_visible_characters(0)
 				if faces[page] != "" || faces[page] != null:
 					get_owner().get_node("photo").get_texture().load(faces[page])
+				if titles[page] != "" || titles[page] != null:
+					get_owner().get_node("title_label").set_text(titles[page])
 		else:
 			set_visible_characters(get_total_character_count())
 		
@@ -42,4 +46,7 @@ func setDialog(lista):
 
 func setFaces(lista):
 	faces = lista
+
+func setTitles(lista):
+	titles = lista
 
