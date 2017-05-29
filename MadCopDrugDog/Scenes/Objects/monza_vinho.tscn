@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://Sprites/Itens/Cars/monza 3.png" type="Texture" id=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -17.8014, -49.0753, -18.1599, 49.5085, -19.2353, 59.9046, -25.3296, 54.5273, -25.6881, 48.433, -25.3296, -49.4338, -24.9711, -55.5281, -22.1032, -58.0375, -18.1599, -58.0375 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 109.103, -49.4338, 111.254, 49.5085, -18.1599, 49.5085, -17.8014, -49.0753 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -107.423, -23.9813, -102.763, -49.4338, -25.3296, -49.4338, -25.6881, 48.433, -103.121, 48.7915, -107.423, 23.339 )
+
+[node name="monza_vinho" type="Node2D"]
+
+[node name="sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+
+[node name="static" type="StaticBody2D" parent="."]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="poly" type="CollisionPolygon2D" parent="static"]
+
+build_mode = 0
+polygon = Vector2Array( 109.103, -49.4338, -17.8014, -49.0753, -18.1599, -58.0375, -22.1032, -58.0375, -24.9711, -55.5281, -25.3296, -49.4338, -102.763, -49.4338, -107.423, -23.9813, -107.423, 23.339, -103.121, 48.7915, -25.6881, 48.433, -25.3296, 54.5273, -19.2353, 59.9046, -18.1599, 49.5085, 111.254, 49.5085 )
+shape_range = Vector2( 0, 2 )
+trigger = false
+
+

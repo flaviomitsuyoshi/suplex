@@ -1,0 +1,218 @@
+[gd_scene load_steps=18 format=1]
+
+[ext_resource path="res://Sprites/Itens/Quartos/TV.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Itens/Quartos/Privada.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Itens/Quartos/Pia.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Itens/Quartos/Mesa.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Itens/Quartos/Cama.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Itens/Tapete/Tapete 11.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Itens/Tapete/Tapete 12.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Itens/Tapete/Tapete 13.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Itens/Tapete/Tapete 14.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Itens/Tapete/Tapete 15.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Itens/Tapete/Tapete 16.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Itens/Tapete/Tapete.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Itens/Tapete/Tapetão.png" type="Texture" id=13]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 9.96608 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="CircleShape2D" id=3]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 52, 38 )
+
+[node name="tileset_wall" type="Node2D"]
+
+[node name="tv" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 24, 30 )
+texture = ExtResource( 1 )
+
+[node name="static" type="StaticBody2D" parent="tv"]
+
+transform/pos = Vector2( -0.5, 0.999998 )
+transform/scale = Vector2( 2.10938, 1.03125 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 2.57692, 0, -1.46969 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="shape" type="CollisionShape2D" parent="tv/static"]
+
+transform/pos = Vector2( 0, -1.46969 )
+transform/scale = Vector2( 1, 2.57692 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="privada" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 77, 19 )
+texture = ExtResource( 2 )
+
+[node name="static" type="StaticBody2D" parent="privada"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1.46154, 0, 0, 1.46154, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="shape" type="CollisionShape2D" parent="privada/static"]
+
+transform/scale = Vector2( 1.46154, 1.46154 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="pia" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 77, 56 )
+texture = ExtResource( 3 )
+
+[node name="static" type="StaticBody2D" parent="pia"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1.46154, 0, 0, 1.46154, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="shape" type="CollisionShape2D" parent="pia/static"]
+
+transform/scale = Vector2( 1.46154, 1.46154 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="mesa" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 135, 37 )
+texture = ExtResource( 4 )
+
+[node name="static" type="StaticBody2D" parent="mesa"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 3.30769, 0, 0, 3.30769, -1.43051e-06, -1.93715e-06 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="shape" type="CollisionShape2D" parent="mesa/static"]
+
+transform/pos = Vector2( -1.43051e-06, -1.93715e-06 )
+transform/scale = Vector2( 3.30769, 3.30769 )
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="mesa"]
+
+[node name="cama" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 228, 44 )
+texture = ExtResource( 5 )
+
+[node name="static" type="StaticBody2D" parent="cama"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="shape" type="CollisionShape2D" parent="cama/static"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="tapete_11" type="Sprite" parent="."]
+
+transform/pos = Vector2( 40, 113 )
+texture = ExtResource( 6 )
+
+[node name="tapete_12" type="Sprite" parent="."]
+
+transform/pos = Vector2( 118, 113 )
+texture = ExtResource( 7 )
+
+[node name="tapete_13" type="Sprite" parent="."]
+
+transform/pos = Vector2( 196, 113 )
+texture = ExtResource( 8 )
+
+[node name="tapete_14" type="Sprite" parent="."]
+
+transform/pos = Vector2( 274, 113 )
+texture = ExtResource( 9 )
+
+[node name="tapete_15" type="Sprite" parent="."]
+
+transform/pos = Vector2( 40, 163 )
+texture = ExtResource( 10 )
+flip_v = true
+
+[node name="tapete_16" type="Sprite" parent="."]
+
+transform/pos = Vector2( 118, 163 )
+texture = ExtResource( 11 )
+flip_v = true
+
+[node name="tapete_roxo" type="Sprite" parent="."]
+
+transform/pos = Vector2( 77, 225 )
+texture = ExtResource( 12 )
+flip_v = true
+
+[node name="tapetao_roxo" type="Sprite" parent="."]
+
+transform/pos = Vector2( 280, 214 )
+texture = ExtResource( 13 )
+flip_v = true
+
+

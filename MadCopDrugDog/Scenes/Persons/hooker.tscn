@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Sprites/Character/Hooker/Hooker Walk.png" type="Texture" id=1]
+
+[node name="hooker" type="Node2D"]
+
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+
+

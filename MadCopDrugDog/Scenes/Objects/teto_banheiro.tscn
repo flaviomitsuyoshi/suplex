@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=1]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -129.221, -18.878, 35.7343, -18.9856, 33.6254, 134.726, -129.662, 134.726 )
+
+[sub_resource type="GDScript" id=2]
+
+resource/name = "teto_banheiro"
+script/source = "extends Area2D
+
+func _ready():
+	add_to_group(game.GRUPO_TETO)
+	pass
+
+
+func _on_teto_banheiro_area_enter( area ):
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").hide()
+			print(\"remover teto\")
+
+
+func _on_teto_banheiro_area_exit( area ):
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").show()
+			print(\"voltar teto\")
+"
+
+[node name="teto_banheiro" type="Area2D"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = SubResource( 2 )
+
+[node name="teto" type="Polygon2D" parent="."]
+
+transform/pos = Vector2( 0, -4 )
+polygon = Vector2Array( 37.3991, -20.6504, -131.422, -20.5998, -131.422, 141.807, 36.7071, 141.807 )
+uv = Vector2Array(  )
+color = Color( 0.588235, 0.588235, 0.588235, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="poly" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -129.221, -18.878, 35.7343, -18.9856, 33.6254, 134.726, -129.662, 134.726 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[connection signal="area_enter" from="." to="." method="_on_teto_banheiro_area_enter"]
+
+[connection signal="area_exit" from="." to="." method="_on_teto_banheiro_area_exit"]
+
+

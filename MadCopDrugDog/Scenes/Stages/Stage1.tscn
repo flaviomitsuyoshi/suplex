@@ -1,0 +1,1489 @@
+[gd_scene load_steps=107 format=1]
+
+[ext_resource path="res://Audio/#22 - Bad Influences [LOOP].ogg" type="AudioStream" id=1]
+[ext_resource path="res://Sprites/Cenario sem itens.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Tilesets/tileset_wall.xml" type="TileSet" id=3]
+[ext_resource path="res://Scenes/Objects/banco.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Objects/carro_vermelho.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Persons/motel_man.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Objects/monza_vinho.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Objects/monza_preto.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Objects/plymouth.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Objects/vaso.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Objects/garrafa.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Objects/cama.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Objects/armario.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Objects/cadeira.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Objects/mesa.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Objects/privada.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Scenes/Objects/banheira.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Scenes/Objects/pia.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Scenes/Objects/tv.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Scenes/Objects/teto.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Scenes/Persons/trevor.tscn" type="PackedScene" id=21]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -1082.63, -792.38, -1086.43, -856.892, 1084.18, -856.892, 1012.08, -799.97 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1012.08, -799.97, 1084.18, -856.892, 1087.98, 740.71, 1015.88, 698.967 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1015.88, 698.967, 1087.98, 740.71, -1124.38, 733.12, -1048.48, 698.967 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -1048.48, 698.967, -1124.38, 733.12, -1116.79, -769.612, -1048.48, -769.612 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 18.3475, 10 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 901.87, 600.942, 75.3882, 600.278, 76.0516, 568.434, 868.056, 566.236 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 900.872, -50.7093, 901.87, 600.942, 868.056, 566.236, 867.477, -50.7093 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -382.947, 25.5373, -384.947, 369.322, -391.947, 367.322, -390.203, 21.526 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -382.947, 25.5373, -390.203, 21.526, 918.508, 20.9272, 924.747, 26.5374 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 922.747, -622.078, 924.747, 26.5374, 918.508, 20.9272, 918.414, -617.422 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -946.879, -621.078, 922.747, -622.078, 918.414, -617.422, -942.144, -617.422 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -949.248, 507.327, -946.879, -621.078, -942.144, -617.422, -942.473, 501.082 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -528.217, 505.959, -949.248, 507.327, -942.473, 501.082, -528.217, 500.595 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -399.101, 424.716, -399.699, 365.44, -394.311, 366.638, -393.712, 429.505 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -399.101, 424.716, -393.712, 429.505, -466.758, 428.907, -466.159, 423.518 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -403.666, -54.9775, -403.003, -50.3336, -836.013, -50.997, -664.427, -55.7703 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -831.39, -220.025, -743.847, -220.025, -744.75, -213.708, -829.585, -215.513 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -836.805, -297.641, -765.507, -298.543, -765.507, -292.226, -832.292, -292.226 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -836.013, -50.997, -836.805, -297.641, -832.292, -292.226, -831.39, -220.025 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -836.013, -50.997, -831.39, -220.025, -829.585, -215.513, -830.487, -56.6728 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -671.647, -214.61, -670.745, -220.025, -659.915, -218.22, -666.232, -213.708 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -666.232, -213.708, -659.915, -218.22, -659.915, -56.6728, -664.427, -55.7703 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -836.013, -50.997, -830.487, -56.6728, -664.427, -55.7703 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -659.915, -56.6728, -403.666, -54.9775, -664.427, -55.7703 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -309.07, -220.467, -307.441, -214.765, -394.593, -215.58, -395.408, -219.652 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -398.666, -293.772, -695.146, -292.958, -693.517, -298.659, -328.618, -299.474 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -392.964, -58.3799, -398.666, -57.5654, -398.666, -293.772, -395.408, -219.652 )
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -328.618, -299.474, -330.247, -292.958, -394.593, -293.772 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -398.666, -293.772, -328.618, -299.474, -394.593, -293.772 )
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -398.666, -293.772, -394.593, -293.772, -395.408, -219.652 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -392.964, -58.3799, -395.408, -219.652, -394.593, -215.58 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -227.43, -214.296, -236.251, -213.561, -236.174, -218.939, -223.86, -218.939 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -227.43, -214.296, -223.86, -218.939, -223.86, -57.2727, -228.626, -57.2727 )
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 40.6018, -219.394, 108.356, -219.753, 108.356, -215.093, 40.2433, -214.734 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 40.2433, -214.734, 40.9603, -57.0001, 37.0169, -57.0001, 37.11, -293.218 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 40.6018, -219.394, 40.2433, -214.734, 37.11, -293.218, 40.9603, -293.243 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 40.9603, -293.243, 37.11, -293.218, -258.02, -293.615, -258.02, -299.574, 85.771, -298.978, 85.771, -293.601 )
+
+[sub_resource type="ConvexPolygonShape2D" id=38]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 180.432, -214.425, 180.432, -220.383, 211.018, -219.192, 207.443, -214.425 )
+
+[sub_resource type="ConvexPolygonShape2D" id=39]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 207.443, -214.425, 211.018, -219.192, 211.415, -57.5254, 207.046, -57.5254 )
+
+[sub_resource type="ConvexPolygonShape2D" id=40]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 538.661, -298.675, 539.259, -293.287, 477.576, -293.335, 157.791, -299.826 )
+
+[sub_resource type="ConvexPolygonShape2D" id=41]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 478.787, -58.5817, 472.8, -57.9829, 472.385, -293.074, 477.589, -214.253 )
+
+[sub_resource type="ConvexPolygonShape2D" id=42]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 562.183, -219.85, 562.58, -214.289, 477.589, -214.253, 477.589, -219.642 )
+
+[sub_resource type="ConvexPolygonShape2D" id=43]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 477.589, -219.642, 477.589, -214.253, 472.385, -293.074, 477.576, -293.335 )
+
+[sub_resource type="ConvexPolygonShape2D" id=44]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 157.791, -299.826, 477.576, -293.335, 472.385, -293.074, 157.791, -292.676 )
+
+[sub_resource type="ConvexPolygonShape2D" id=45]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 634.309, -214.954, 633.592, -219.972, 647.932, -219.614, 644.706, -214.595 )
+
+[sub_resource type="ConvexPolygonShape2D" id=46]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 644.706, -214.595, 647.932, -219.614, 649.366, -57.5781, 644.706, -57.9366 )
+
+[sub_resource type="ConvexPolygonShape2D" id=47]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 907.476, -298.481, 907.834, -293.82, 609.932, -293.82, 609.932, -298.839 )
+
+[sub_resource type="ConvexPolygonShape2D" id=48]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -835.503, -452.2, -835.503, -693.599, -831.114, -693.112, -831.114, -456.102 )
+
+[sub_resource type="ConvexPolygonShape2D" id=49]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -506.81, -451.225, -835.503, -452.2, -831.114, -456.102, -507.297, -457.077 )
+
+[sub_resource type="ConvexPolygonShape2D" id=50]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -566.306, -535.105, -530.218, -535.105, -530.218, -530.716, -570.695, -530.716 )
+
+[sub_resource type="ConvexPolygonShape2D" id=51]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -566.306, -535.105, -570.695, -530.716, -570.695, -691.649, -566.794, -691.649 )
+
+[sub_resource type="ConvexPolygonShape2D" id=52]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -395.526, -456.589, -72.197, -456.589, -72.6847, -451.712, -435.121, -451.225 )
+
+[sub_resource type="ConvexPolygonShape2D" id=53]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -435.121, -451.225, -435.121, -456.589, -400.009, -456.589 )
+
+[sub_resource type="ConvexPolygonShape2D" id=54]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -395.526, -456.589, -435.121, -451.225, -400.009, -456.589 )
+
+[sub_resource type="ConvexPolygonShape2D" id=55]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -396.107, -693.112, -395.526, -456.589, -400.009, -456.589, -399.521, -535.593 )
+
+[sub_resource type="ConvexPolygonShape2D" id=56]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -400.009, -530.716, -458.042, -530.716, -458.042, -535.593, -399.521, -535.593 )
+
+[sub_resource type="ConvexPolygonShape2D" id=57]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -399.521, -535.593, -399.521, -693.112, -396.107, -693.112 )
+
+[sub_resource type="ConvexPolygonShape2D" id=58]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -399.521, -535.593, -400.009, -456.589, -400.009, -530.716 )
+
+[sub_resource type="ConvexPolygonShape2D" id=59]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -95.7549, -535.724, -95.7549, -530.163, -134.682, -531.354, -130.313, -536.121 )
+
+[sub_resource type="ConvexPolygonShape2D" id=60]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -130.313, -536.121, -134.682, -531.354, -134.682, -693.021, -130.313, -693.021 )
+
+[sub_resource type="ConvexPolygonShape2D" id=61]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 36.2067, -535.474, 36.2067, -692.374, 40.1789, -691.976, 36.6039, -530.707 )
+
+[sub_resource type="ConvexPolygonShape2D" id=62]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 344.05, -456.37, 344.05, -450.518, -0.337006, -452.059, 40.7158, -456.37 )
+
+[sub_resource type="ConvexPolygonShape2D" id=63]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 40.7158, -456.37, -0.337006, -452.059, -0.337006, -456.428, 36.2067, -456.428 )
+
+[sub_resource type="ConvexPolygonShape2D" id=64]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 40.1789, -691.976, 40.7158, -456.37, 36.2067, -456.428, 36.6039, -530.707 )
+
+[sub_resource type="ConvexPolygonShape2D" id=65]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 36.2067, -535.474, 36.6039, -530.707, -23.3755, -531.104, -23.3755, -535.077 )
+
+[sub_resource type="ConvexPolygonShape2D" id=66]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 320.41, -535.452, 320.807, -530.685, 301.741, -531.082, 306.11, -534.657 )
+
+[sub_resource type="ConvexPolygonShape2D" id=67]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 306.11, -534.657, 301.741, -531.082, 301.741, -692.749, 306.11, -692.352 )
+
+[sub_resource type="ConvexPolygonShape2D" id=68]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 798.011, -451.391, 415.494, -451.391, 416.288, -456.555, 477.062, -456.157 )
+
+[sub_resource type="ConvexPolygonShape2D" id=69]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 472.295, -531.231, 392.058, -530.834, 392.455, -535.304, 472.692, -535.628 )
+
+[sub_resource type="ConvexPolygonShape2D" id=70]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 472.692, -535.628, 472.368, -694.483, 476.494, -694.285, 477.062, -456.157 )
+
+[sub_resource type="ConvexPolygonShape2D" id=71]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 472.295, -531.231, 472.692, -535.628, 477.062, -456.157, 472.693, -457.746 )
+
+[sub_resource type="ConvexPolygonShape2D" id=72]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 477.062, -456.157, 797.614, -455.76, 798.011, -451.391 )
+
+[sub_resource type="ConvexPolygonShape2D" id=73]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 472.693, -457.746, 477.062, -456.157, 416.288, -456.555 )
+
+[sub_resource type="ConvexPolygonShape2D" id=74]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 736.302, -692.307, 742.023, -692.307, 741.583, -536.062, 736.302, -531.66 )
+
+[sub_resource type="ConvexPolygonShape2D" id=75]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 774.153, -531.66, 736.302, -531.66, 741.583, -536.062, 774.153, -536.062 )
+
+[sub_resource type="ConvexPolygonShape2D" id=76]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 869.55, -452.026, 869.153, -456.395, 907.683, -455.998, 909.669, -452.423 )
+
+[sub_resource type="ConvexPolygonShape2D" id=77]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 909.669, -535.044, 909.669, -452.423, 907.683, -455.998, 907.286, -530.674 )
+
+[sub_resource type="ConvexPolygonShape2D" id=78]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 846.512, -534.647, 909.669, -535.044, 907.286, -530.674, 846.512, -530.674 )
+
+[sub_resource type="ConvexPolygonShape2D" id=79]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -835.443, 177.252, -849.375, 177.252, -849.375, -49.6377, -835.166, -49.7295 )
+
+[sub_resource type="ConvexPolygonShape2D" id=80]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -406.435, 410.901, -942.957, 414.584, -945.413, -687.925, -402.752, -59.3227 )
+
+[sub_resource type="ConvexPolygonShape2D" id=81]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -402.752, -59.3227, -945.413, -687.925, 906.017, -689.153, 906.017, -59.3228 )
+
+[sub_resource type="GDScript" id=82]
+
+resource/name = "teto_quarto"
+script/source = "extends Area2D
+
+func _ready():
+	add_to_group(game.GRUPO_TETO)
+	pass
+
+
+func _on_teto_geral_area_enter( area ):
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").hide()
+			print(\"remover teto\")
+
+
+func _on_teto_geral_area_exit( area ):
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").show()
+			print(\"voltar teto\")
+"
+
+[sub_resource type="ConvexPolygonShape2D" id=83]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -401.473, -457.831, -830.043, -457.168, -829.379, -690.028, -401.473, -690.028 )
+
+[sub_resource type="ConvexPolygonShape2D" id=84]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -405.119, -542.99, -561.024, -542.99, -561.024, -686.289, -405.119, -686.953 )
+
+[sub_resource type="GDScript" id=85]
+
+resource/name = "teto_banheiro"
+script/source = "extends Area2D
+
+func _ready():
+	add_to_group(game.GRUPO_TETO)
+	pass
+
+func _on_banheiro_area_enter( area ):
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").hide()
+			print(\"remover teto\")
+
+
+func _on_banheiro_area_exit( area ):
+	if (area.get_owner()):
+		if area.get_owner().is_in_group(game.GRUPO_PLAYER):
+			get_node(\"teto\").show()
+			print(\"voltar teto\")
+"
+
+[node name="stage" type="Node"]
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+layer = 10
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+
+[node name="StreamPlayer" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 1 )
+stream/play = false
+stream/loop = true
+stream/volume_db = -0.5
+stream/autoplay = true
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
+
+[node name="cena" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 6.5614, -107.332 )
+texture = ExtResource( 2 )
+
+[node name="area" type="StaticBody2D" parent="cena"]
+
+editor/display_folded = true
+transform/pos = Vector2( 0.975342, 6.33978 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 4 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 5 )
+shapes/4/transform = Matrix32( 5.48512, 0, 0, 1.55316, -294.469, 584.731 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 6 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 7 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 8 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, -9.55621, -77.1847 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 9 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, -9.55621, -77.1847 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 10 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, -9.55621, -77.1847 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 11 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, -9.55621, -77.1847 )
+shapes/10/trigger = false
+shapes/11/shape = SubResource( 12 )
+shapes/11/transform = Matrix32( 1, 0, 0, 1, -9.55621, -77.1847 )
+shapes/11/trigger = false
+shapes/12/shape = SubResource( 13 )
+shapes/12/transform = Matrix32( 1, 0, 0, 1, -9.55621, -77.1847 )
+shapes/12/trigger = false
+shapes/13/shape = SubResource( 14 )
+shapes/13/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/13/trigger = false
+shapes/14/shape = SubResource( 15 )
+shapes/14/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/14/trigger = false
+shapes/15/shape = SubResource( 16 )
+shapes/15/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/15/trigger = false
+shapes/16/shape = SubResource( 17 )
+shapes/16/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/16/trigger = false
+shapes/17/shape = SubResource( 18 )
+shapes/17/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/17/trigger = false
+shapes/18/shape = SubResource( 19 )
+shapes/18/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/18/trigger = false
+shapes/19/shape = SubResource( 20 )
+shapes/19/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/19/trigger = false
+shapes/20/shape = SubResource( 21 )
+shapes/20/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/20/trigger = false
+shapes/21/shape = SubResource( 22 )
+shapes/21/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/21/trigger = false
+shapes/22/shape = SubResource( 23 )
+shapes/22/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/22/trigger = false
+shapes/23/shape = SubResource( 24 )
+shapes/23/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/23/trigger = false
+shapes/24/shape = SubResource( 25 )
+shapes/24/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/24/trigger = false
+shapes/25/shape = SubResource( 26 )
+shapes/25/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/25/trigger = false
+shapes/26/shape = SubResource( 27 )
+shapes/26/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/26/trigger = false
+shapes/27/shape = SubResource( 28 )
+shapes/27/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/27/trigger = false
+shapes/28/shape = SubResource( 29 )
+shapes/28/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/28/trigger = false
+shapes/29/shape = SubResource( 30 )
+shapes/29/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/29/trigger = false
+shapes/30/shape = SubResource( 31 )
+shapes/30/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/30/trigger = false
+shapes/31/shape = SubResource( 32 )
+shapes/31/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/31/trigger = false
+shapes/32/shape = SubResource( 33 )
+shapes/32/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/32/trigger = false
+shapes/33/shape = SubResource( 34 )
+shapes/33/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/33/trigger = false
+shapes/34/shape = SubResource( 35 )
+shapes/34/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/34/trigger = false
+shapes/35/shape = SubResource( 36 )
+shapes/35/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/35/trigger = false
+shapes/36/shape = SubResource( 37 )
+shapes/36/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/36/trigger = false
+shapes/37/shape = SubResource( 38 )
+shapes/37/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/37/trigger = false
+shapes/38/shape = SubResource( 39 )
+shapes/38/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/38/trigger = false
+shapes/39/shape = SubResource( 40 )
+shapes/39/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/39/trigger = false
+shapes/40/shape = SubResource( 41 )
+shapes/40/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/40/trigger = false
+shapes/41/shape = SubResource( 42 )
+shapes/41/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/41/trigger = false
+shapes/42/shape = SubResource( 43 )
+shapes/42/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/42/trigger = false
+shapes/43/shape = SubResource( 44 )
+shapes/43/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/43/trigger = false
+shapes/44/shape = SubResource( 45 )
+shapes/44/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/44/trigger = false
+shapes/45/shape = SubResource( 46 )
+shapes/45/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/45/trigger = false
+shapes/46/shape = SubResource( 47 )
+shapes/46/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/46/trigger = false
+shapes/47/shape = SubResource( 48 )
+shapes/47/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/47/trigger = false
+shapes/48/shape = SubResource( 49 )
+shapes/48/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/48/trigger = false
+shapes/49/shape = SubResource( 50 )
+shapes/49/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/49/trigger = false
+shapes/50/shape = SubResource( 51 )
+shapes/50/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/50/trigger = false
+shapes/51/shape = SubResource( 52 )
+shapes/51/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/51/trigger = false
+shapes/52/shape = SubResource( 53 )
+shapes/52/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/52/trigger = false
+shapes/53/shape = SubResource( 54 )
+shapes/53/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/53/trigger = false
+shapes/54/shape = SubResource( 55 )
+shapes/54/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/54/trigger = false
+shapes/55/shape = SubResource( 56 )
+shapes/55/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/55/trigger = false
+shapes/56/shape = SubResource( 57 )
+shapes/56/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/56/trigger = false
+shapes/57/shape = SubResource( 58 )
+shapes/57/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/57/trigger = false
+shapes/58/shape = SubResource( 59 )
+shapes/58/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/58/trigger = false
+shapes/59/shape = SubResource( 60 )
+shapes/59/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/59/trigger = false
+shapes/60/shape = SubResource( 61 )
+shapes/60/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/60/trigger = false
+shapes/61/shape = SubResource( 62 )
+shapes/61/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/61/trigger = false
+shapes/62/shape = SubResource( 63 )
+shapes/62/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/62/trigger = false
+shapes/63/shape = SubResource( 64 )
+shapes/63/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/63/trigger = false
+shapes/64/shape = SubResource( 65 )
+shapes/64/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/64/trigger = false
+shapes/65/shape = SubResource( 66 )
+shapes/65/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/65/trigger = false
+shapes/66/shape = SubResource( 67 )
+shapes/66/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/66/trigger = false
+shapes/67/shape = SubResource( 68 )
+shapes/67/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/67/trigger = false
+shapes/68/shape = SubResource( 69 )
+shapes/68/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/68/trigger = false
+shapes/69/shape = SubResource( 70 )
+shapes/69/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/69/trigger = false
+shapes/70/shape = SubResource( 71 )
+shapes/70/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/70/trigger = false
+shapes/71/shape = SubResource( 72 )
+shapes/71/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/71/trigger = false
+shapes/72/shape = SubResource( 73 )
+shapes/72/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/72/trigger = false
+shapes/73/shape = SubResource( 74 )
+shapes/73/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/73/trigger = false
+shapes/74/shape = SubResource( 75 )
+shapes/74/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/74/trigger = false
+shapes/75/shape = SubResource( 76 )
+shapes/75/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/75/trigger = false
+shapes/76/shape = SubResource( 77 )
+shapes/76/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/76/trigger = false
+shapes/77/shape = SubResource( 78 )
+shapes/77/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/77/trigger = false
+shapes/78/shape = SubResource( 79 )
+shapes/78/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/78/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="limite" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -1082.63, -792.38, 1012.08, -799.97, 1015.88, 698.967, -1048.48, 698.967, -1048.48, -769.612, -1116.79, -769.612, -1124.38, 733.12, 1087.98, 740.71, 1084.18, -856.892, -1086.43, -856.892 )
+shape_range = Vector2( 0, 3 )
+trigger = false
+
+[node name="grade" type="CollisionShape2D" parent="cena/area"]
+
+transform/pos = Vector2( -294.469, 584.731 )
+transform/scale = Vector2( 5.48512, 1.55316 )
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 4
+
+[node name="grade2" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 76.0516, 568.434, 75.3882, 600.278, 901.87, 600.942, 900.872, -50.7093, 867.477, -50.7093, 868.056, 566.236 )
+shape_range = Vector2( 5, 6 )
+trigger = false
+
+[node name="parede_externa" type="CollisionPolygon2D" parent="cena/area"]
+
+transform/pos = Vector2( -9.55621, -77.1847 )
+build_mode = 0
+polygon = Vector2Array( -528.217, 505.959, -528.217, 500.595, -942.473, 501.082, -942.144, -617.422, 918.414, -617.422, 918.508, 20.9272, -390.203, 21.526, -391.947, 367.322, -384.947, 369.322, -382.947, 25.5373, 924.747, 26.5374, 922.747, -622.078, -946.879, -621.078, -949.248, 507.327 )
+shape_range = Vector2( 7, 12 )
+trigger = false
+
+[node name="parede externa2" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -466.159, 423.518, -466.758, 428.907, -393.712, 429.505, -394.311, 366.638, -399.699, 365.44, -399.101, 424.716 )
+shape_range = Vector2( 13, 14 )
+trigger = false
+
+[node name="parede_interna_01" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -403.666, -54.9775, -403.003, -50.3336, -836.013, -50.997, -836.805, -297.641, -765.507, -298.543, -765.507, -292.226, -832.292, -292.226, -831.39, -220.025, -743.847, -220.025, -744.75, -213.708, -829.585, -215.513, -830.487, -56.6728, -664.427, -55.7703, -666.232, -213.708, -671.647, -214.61, -670.745, -220.025, -659.915, -218.22, -659.915, -56.6728 )
+shape_range = Vector2( 15, 23 )
+trigger = false
+
+[node name="parede_interna_02" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -693.517, -298.659, -695.146, -292.958, -398.666, -293.772, -398.666, -57.5654, -392.964, -58.3799, -394.593, -215.58, -307.441, -214.765, -309.07, -220.467, -395.408, -219.652, -394.593, -293.772, -330.247, -292.958, -328.618, -299.474 )
+shape_range = Vector2( 24, 30 )
+trigger = false
+
+[node name="parede_interna_03" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -236.174, -218.939, -236.251, -213.561, -227.43, -214.296, -228.626, -57.2727, -223.86, -57.2727, -223.86, -218.939 )
+shape_range = Vector2( 31, 32 )
+trigger = false
+
+[node name="parede_interna_04" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -258.02, -299.574, -258.02, -293.615, 37.11, -293.218, 37.0169, -57.0001, 40.9603, -57.0001, 40.2433, -214.734, 108.356, -215.093, 108.356, -219.753, 40.6018, -219.394, 40.9603, -293.243, 85.771, -293.601, 85.771, -298.978 )
+shape_range = Vector2( 33, 36 )
+trigger = false
+
+[node name="parede_interna_05" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 180.432, -220.383, 180.432, -214.425, 207.443, -214.425, 207.046, -57.5254, 211.415, -57.5254, 211.018, -219.192 )
+shape_range = Vector2( 37, 38 )
+trigger = false
+
+[node name="parede_interna_06" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 157.791, -299.826, 157.791, -292.676, 472.385, -293.074, 472.8, -57.9829, 478.787, -58.5817, 477.589, -214.253, 562.58, -214.289, 562.183, -219.85, 477.589, -219.642, 477.576, -293.335, 539.259, -293.287, 538.661, -298.675 )
+shape_range = Vector2( 39, 43 )
+trigger = false
+
+[node name="parede_interna_07" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 633.592, -219.972, 634.309, -214.954, 644.706, -214.595, 644.706, -57.9366, 649.366, -57.5781, 647.932, -219.614 )
+shape_range = Vector2( 44, 45 )
+trigger = false
+
+[node name="parede_interna_08" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 609.932, -298.839, 609.932, -293.82, 907.834, -293.82, 907.476, -298.481 )
+shape_range = Vector2( 46, 46 )
+trigger = false
+
+[node name="parede_interna_09" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -835.503, -693.599, -835.503, -452.2, -506.81, -451.225, -507.297, -457.077, -831.114, -456.102, -831.114, -693.112 )
+shape_range = Vector2( 47, 48 )
+trigger = false
+
+[node name="parede_interna_10" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -566.794, -691.649, -570.695, -691.649, -570.695, -530.716, -530.218, -530.716, -530.218, -535.105, -566.306, -535.105 )
+shape_range = Vector2( 49, 50 )
+trigger = false
+
+[node name="parede_interna_11" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -396.107, -693.112, -399.521, -693.112, -399.521, -535.593, -458.042, -535.593, -458.042, -530.716, -400.009, -530.716, -400.009, -456.589, -435.121, -456.589, -435.121, -451.225, -72.6847, -451.712, -72.197, -456.589, -395.526, -456.589 )
+shape_range = Vector2( 51, 57 )
+trigger = false
+
+[node name="parede_interna_12" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -134.682, -693.021, -130.313, -693.021, -130.313, -536.121, -95.7549, -535.724, -95.7549, -530.163, -134.682, -531.354 )
+shape_range = Vector2( 58, 59 )
+trigger = false
+
+[node name="parede_interna_13" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 40.1789, -691.976, 36.2067, -692.374, 36.2067, -535.474, -23.3755, -535.077, -23.3755, -531.104, 36.6039, -530.707, 36.2067, -456.428, -0.337006, -456.428, -0.337006, -452.059, 344.05, -450.518, 344.05, -456.37, 40.7158, -456.37 )
+shape_range = Vector2( 60, 64 )
+trigger = false
+
+[node name="parede_interna_14" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 301.741, -692.749, 306.11, -692.352, 306.11, -534.657, 320.41, -535.452, 320.807, -530.685, 301.741, -531.082 )
+shape_range = Vector2( 65, 66 )
+trigger = false
+
+[node name="parede_interna_15" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 476.494, -694.285, 472.368, -694.483, 472.692, -535.628, 392.455, -535.304, 392.058, -530.834, 472.295, -531.231, 472.693, -457.746, 416.288, -456.555, 415.494, -451.391, 798.011, -451.391, 797.614, -455.76, 477.062, -456.157 )
+shape_range = Vector2( 67, 72 )
+trigger = false
+
+[node name="parede_interna_16" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 742.023, -692.307, 736.302, -692.307, 736.302, -531.66, 774.153, -531.66, 774.153, -536.062, 741.583, -536.062 )
+shape_range = Vector2( 73, 74 )
+trigger = false
+
+[node name="parede_interna_17" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( 846.512, -534.647, 846.512, -530.674, 907.286, -530.674, 907.683, -455.998, 869.153, -456.395, 869.55, -452.026, 909.669, -452.423, 909.669, -535.044 )
+shape_range = Vector2( 75, 77 )
+trigger = false
+
+[node name="escada" type="CollisionPolygon2D" parent="cena/area"]
+
+build_mode = 0
+polygon = Vector2Array( -835.166, -49.7295, -849.375, -49.6377, -849.375, 177.252, -835.443, 177.252 )
+shape_range = Vector2( 78, 78 )
+trigger = false
+
+[node name="tilemap" type="TileMap" parent="cena"]
+
+mode = 0
+tile_set = ExtResource( 3 )
+cell/size = Vector2( 16, 16 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 1
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( -1703966, 5, -1703939, 6, -1769449, 7, -1769420, 8, -1245230, 9, -1245203, 9, -1310713, 10, -1310685, 10, 393181, 11, 1179611, 12, 1507274, 11 )
+
+[node name="banco" parent="cena" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -857.418, 386.591 )
+
+[node name="carro_vermelho" parent="cena" instance=ExtResource( 5 )]
+
+transform/pos = Vector2( -234.554, 164.474 )
+
+[node name="motel_man" parent="cena" instance=ExtResource( 6 )]
+
+transform/pos = Vector2( -522.143, 111.413 )
+
+[node name="monza_vinho" parent="cena" instance=ExtResource( 7 )]
+
+transform/pos = Vector2( 758.195, 156.764 )
+transform/rot = -180.0
+
+[node name="monza_preto" parent="cena" instance=ExtResource( 8 )]
+
+transform/pos = Vector2( 364.778, 394.925 )
+
+[node name="plymouth" parent="cena" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 755.18, 27.1322 )
+transform/rot = 180.0
+
+[node name="vaso" parent="cena" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( -771.627, 384.143 )
+
+[node name="vaso1" parent="cena" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( -561.184, 462.642 )
+
+[node name="vaso2" parent="cena" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( -369.112, 394.165 )
+
+[node name="garrafa" parent="cena" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 623.053, 115.632 )
+
+[node name="quarto1" type="Node2D" parent="cena"]
+
+editor/display_folded = true
+
+[node name="cama" parent="cena/quarto1" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -452.234, -96.9499 )
+
+[node name="armario" parent="cena/quarto1" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( -420.625, -230.737 )
+transform/rot = -180.0
+
+[node name="cadeira 2" parent="cena/quarto1" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -539.559, -147.019 )
+transform/rot = -180.0
+
+[node name="cadeira" parent="cena/quarto1" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -578.519, -216.853 )
+
+[node name="mesa" parent="cena/quarto1" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -553.674, -185.011 )
+
+[node name="privada" parent="cena/quarto1" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( -810.808, -177.158 )
+
+[node name="banheira" parent="cena/quarto1" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( -762.614, -87.5427 )
+
+[node name="pia" parent="cena/quarto1" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( -676.877, -152.523 )
+
+[node name="tv" parent="cena/quarto1" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( -627.002, -102 )
+
+[node name="quarto2" type="Node2D" parent="cena"]
+
+editor/display_folded = true
+transform/pos = Vector2( 435.577, -3.25806 )
+
+[node name="cama" parent="cena/quarto2" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -452.234, -96.9499 )
+
+[node name="armario" parent="cena/quarto2" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( -420.625, -230.737 )
+transform/rot = -180.0
+
+[node name="cadeira 2" parent="cena/quarto2" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -539.559, -147.019 )
+transform/rot = -180.0
+
+[node name="cadeira" parent="cena/quarto2" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -578.519, -216.853 )
+
+[node name="mesa" parent="cena/quarto2" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -553.674, -185.011 )
+
+[node name="privada" parent="cena/quarto2" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( -810.808, -177.158 )
+
+[node name="banheira" parent="cena/quarto2" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( -762.614, -87.5427 )
+
+[node name="pia" parent="cena/quarto2" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( -676.877, -152.523 )
+
+[node name="tv" parent="cena/quarto2" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( -625.188, -93.8549 )
+
+[node name="quarto3" type="Node2D" parent="cena"]
+
+editor/display_folded = true
+transform/pos = Vector2( 870.197, -0.802612 )
+
+[node name="cama" parent="cena/quarto3" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -452.234, -96.9499 )
+
+[node name="armario" parent="cena/quarto3" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( -420.625, -230.737 )
+transform/rot = -180.0
+
+[node name="cadeira 2" parent="cena/quarto3" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -539.559, -147.019 )
+transform/rot = -180.0
+
+[node name="cadeira" parent="cena/quarto3" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -578.519, -216.853 )
+
+[node name="mesa" parent="cena/quarto3" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -553.674, -185.011 )
+
+[node name="privada" parent="cena/quarto3" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( -810.808, -177.158 )
+
+[node name="banheira" parent="cena/quarto3" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( -762.614, -87.5427 )
+
+[node name="pia" parent="cena/quarto3" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( -676.877, -152.523 )
+
+[node name="tv" parent="cena/quarto3" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( -625.188, -93.8549 )
+
+[node name="quarto4" type="Node2D" parent="cena"]
+
+editor/display_folded = true
+transform/pos = Vector2( 1306.05, -2.03033 )
+
+[node name="cama" parent="cena/quarto4" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -452.234, -96.9499 )
+
+[node name="armario" parent="cena/quarto4" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( -420.625, -230.737 )
+transform/rot = -180.0
+
+[node name="cadeira 2" parent="cena/quarto4" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -539.559, -147.019 )
+transform/rot = -180.0
+
+[node name="cadeira" parent="cena/quarto4" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -578.519, -216.853 )
+
+[node name="mesa" parent="cena/quarto4" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -553.674, -185.011 )
+
+[node name="privada" parent="cena/quarto4" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( -810.808, -177.158 )
+
+[node name="banheira" parent="cena/quarto4" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( -758.633, -87.5427 )
+
+[node name="pia" parent="cena/quarto4" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( -671.57, -153.186 )
+
+[node name="tv" parent="cena/quarto4" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( -625.188, -93.8549 )
+
+[node name="quarto5" type="Node2D" parent="cena"]
+
+editor/display_folded = true
+transform/pos = Vector2( -800.232, -655.875 )
+transform/rot = 180.0
+
+[node name="cama" parent="cena/quarto5" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -25.6398, -12.739 )
+
+[node name="armario" parent="cena/quarto5" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 8.18518, -150.958 )
+transform/rot = -180.0
+
+[node name="cadeira 2" parent="cena/quarto5" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -102.168, -107.922 )
+transform/rot = -180.0
+
+[node name="cadeira" parent="cena/quarto5" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -150.087, -171.24 )
+
+[node name="mesa" parent="cena/quarto5" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -129.315, -136.14 )
+
+[node name="privada" parent="cena/quarto5" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( -382.376, -94.0781 )
+
+[node name="banheira" parent="cena/quarto5" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( -334.182, -5.27722 )
+
+[node name="pia" parent="cena/quarto5" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( -247.631, -79.2171 )
+
+[node name="tv" parent="cena/quarto5" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( -201.014, -7.51691 )
+
+[node name="quarto6" type="Node2D" parent="cena"]
+
+editor/display_folded = true
+transform/pos = Vector2( -363.655, -655.06 )
+transform/rot = 180.0
+
+[node name="cama" parent="cena/quarto6" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -25.6398, -12.739 )
+
+[node name="armario" parent="cena/quarto6" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 8.18518, -150.958 )
+transform/rot = -180.0
+
+[node name="cadeira 2" parent="cena/quarto6" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -102.168, -107.922 )
+transform/rot = -180.0
+
+[node name="cadeira" parent="cena/quarto6" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -150.087, -171.24 )
+
+[node name="mesa" parent="cena/quarto6" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -129.315, -136.14 )
+
+[node name="privada" parent="cena/quarto6" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( -382.376, -94.0781 )
+
+[node name="banheira" parent="cena/quarto6" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( -334.182, -5.27722 )
+
+[node name="pia" parent="cena/quarto6" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( -247.631, -79.2171 )
+
+[node name="tv" parent="cena/quarto6" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( -201.014, -7.51691 )
+
+[node name="quarto7" type="Node2D" parent="cena"]
+
+editor/display_folded = true
+transform/pos = Vector2( 72.1069, -655.06 )
+transform/rot = 180.0
+
+[node name="cama" parent="cena/quarto7" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -25.6398, -12.739 )
+
+[node name="armario" parent="cena/quarto7" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 8.18518, -150.958 )
+transform/rot = -180.0
+
+[node name="cadeira 2" parent="cena/quarto7" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -102.168, -107.922 )
+transform/rot = -180.0
+
+[node name="cadeira" parent="cena/quarto7" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -150.087, -171.24 )
+
+[node name="mesa" parent="cena/quarto7" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -129.315, -136.14 )
+
+[node name="privada" parent="cena/quarto7" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( -382.376, -94.0781 )
+
+[node name="banheira" parent="cena/quarto7" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( -334.182, -5.27722 )
+
+[node name="pia" parent="cena/quarto7" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( -247.631, -79.2171 )
+
+[node name="tv" parent="cena/quarto7" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( -201.014, -7.51691 )
+
+[node name="quarto8" type="Node2D" parent="cena"]
+
+editor/display_folded = true
+transform/pos = Vector2( 509.673, -657.168 )
+transform/rot = 180.0
+
+[node name="cama" parent="cena/quarto8" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -25.6398, -12.739 )
+
+[node name="armario" parent="cena/quarto8" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 8.18518, -150.958 )
+transform/rot = -180.0
+
+[node name="cadeira 2" parent="cena/quarto8" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -102.168, -107.922 )
+transform/rot = -180.0
+
+[node name="cadeira" parent="cena/quarto8" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( -150.087, -171.24 )
+
+[node name="mesa" parent="cena/quarto8" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -129.315, -136.14 )
+
+[node name="privada" parent="cena/quarto8" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( -382.376, -94.0781 )
+
+[node name="banheira" parent="cena/quarto8" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( -334.182, -5.27722 )
+
+[node name="pia" parent="cena/quarto8" instance=ExtResource( 18 )]
+
+transform/pos = Vector2( -247.631, -79.2171 )
+
+[node name="tv" parent="cena/quarto8" instance=ExtResource( 19 )]
+
+transform/pos = Vector2( -201.014, -7.51691 )
+
+[node name="teto" type="Node2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 7.53674, -100.992 )
+
+[node name="teto_geral" type="Area2D" parent="teto"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 80 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 81 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = SubResource( 82 )
+
+[node name="poly" type="CollisionPolygon2D" parent="teto/teto_geral"]
+
+build_mode = 0
+polygon = Vector2Array( -402.752, -59.3227, 906.017, -59.3228, 906.017, -689.153, -945.413, -687.925, -942.957, 414.584, -406.435, 410.901 )
+shape_range = Vector2( 0, 1 )
+trigger = false
+
+[node name="teto" type="Polygon2D" parent="teto/teto_geral"]
+
+polygon = Vector2Array( -397.122, 425.93, -397.196, -54.2879, 914.791, -55.3665, 912.94, -695.681, -954.335, -697.531, -954.571, 426.578 )
+uv = Vector2Array(  )
+color = Color( 0.588235, 0.588235, 0.588235, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="teto_quarto1" type="Area2D" parent="teto"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 83 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = SubResource( 82 )
+
+[node name="poly" type="CollisionPolygon2D" parent="teto/teto_quarto1"]
+
+build_mode = 0
+polygon = Vector2Array( -401.473, -690.028, -829.379, -690.028, -830.043, -457.168, -401.473, -457.831 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="teto" type="Polygon2D" parent="teto/teto_quarto1"]
+
+polygon = Vector2Array( -833.186, -694.703, -398.011, -694.703, -398.011, -455.063, -833.186, -454.328 )
+uv = Vector2Array(  )
+color = Color( 0.588235, 0.588235, 0.588235, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="banheiro_1" type="Area2D" parent="teto/teto_quarto1"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 84 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = SubResource( 85 )
+
+[node name="teto" type="Polygon2D" parent="teto/teto_quarto1/banheiro_1"]
+
+polygon = Vector2Array( -566.331, -693.587, -566.995, -535.029, -399.812, -535.029, -399.812, -693.587 )
+uv = Vector2Array(  )
+color = Color( 0.588235, 0.588235, 0.588235, 1 )
+vertex_colors = ColorArray(  )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="poly" type="CollisionPolygon2D" parent="teto/teto_quarto1/banheiro_1"]
+
+build_mode = 0
+polygon = Vector2Array( -405.119, -686.953, -561.024, -686.289, -561.024, -542.99, -405.119, -542.99 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="teto 2" parent="teto" instance=ExtResource( 20 )]
+
+transform/pos = Vector2( 337.595, -642.703 )
+
+[node name="teto 3" parent="teto" instance=ExtResource( 20 )]
+
+transform/pos = Vector2( -95.8569, -643.352 )
+
+[node name="teto 4" parent="teto" instance=ExtResource( 20 )]
+
+transform/pos = Vector2( 773.604, -642.297 )
+
+[node name="teto 5" parent="teto" instance=ExtResource( 20 )]
+
+transform/pos = Vector2( -699.774, -106.221 )
+transform/rot = -180.0
+
+[node name="teto 6" parent="teto" instance=ExtResource( 20 )]
+
+transform/pos = Vector2( -263.772, -107.221 )
+transform/rot = -180.0
+
+[node name="teto 7" parent="teto" instance=ExtResource( 20 )]
+
+transform/pos = Vector2( 174.229, -107.221 )
+transform/rot = -180.0
+
+[node name="teto 8" parent="teto" instance=ExtResource( 20 )]
+
+transform/pos = Vector2( 613.311, -104.67 )
+transform/rot = -180.0
+
+[node name="trevor" parent="." instance=ExtResource( 21 )]
+
+transform/pos = Vector2( -31.8092, 511.665 )
+
+[connection signal="area_enter" from="teto/teto_geral" to="teto/teto_geral" method="_on_teto_geral_area_enter"]
+
+[connection signal="area_exit" from="teto/teto_geral" to="teto/teto_geral" method="_on_teto_geral_area_exit"]
+
+[connection signal="area_enter" from="teto/teto_quarto1" to="teto/teto_quarto1" method="_on_teto_geral_area_enter"]
+
+[connection signal="area_exit" from="teto/teto_quarto1" to="teto/teto_quarto1" method="_on_teto_geral_area_exit"]
+
+[connection signal="area_enter" from="teto/teto_quarto1/banheiro_1" to="teto/teto_quarto1/banheiro_1" method="_on_banheiro_area_enter"]
+
+[connection signal="area_exit" from="teto/teto_quarto1/banheiro_1" to="teto/teto_quarto1/banheiro_1" method="_on_banheiro_area_exit"]
+
+
