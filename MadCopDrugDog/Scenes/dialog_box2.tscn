@@ -1,14 +1,13 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=2 format=1]
 
-[ext_resource path="res://Scripts/dialog_text.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/Character/Trevor/Trevor.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/dialog_box2.gd" type="Script" id=1]
 
-[node name="dialog_box" type="Polygon2D"]
+[node name="dialog_box2" type="Polygon2D"]
 
-process/pause_mode = 2
-polygon = Vector2Array( 32, 432, 32, 576, 992, 576, 992, 432 )
+editor/display_folded = true
+polygon = Vector2Array( 32, 576, 32, 432, 992, 432, 992, 576 )
 uv = Vector2Array(  )
-color = Color( 0.167969, 0.167969, 0.167969, 1 )
+color = Color( 0.167843, 0.167843, 0.167843, 1 )
 vertex_colors = ColorArray(  )
 offset = Vector2( 0, 0 )
 texture/texture = null
@@ -24,11 +23,10 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 176.0
+margin/left = 48.0
 margin/top = 448.0
 margin/right = 976.0
-margin/bottom = 478.0
-valign = 1
+margin/bottom = 480.0
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -40,7 +38,7 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 176.0
+margin/left = 48.0
 margin/top = 480.0
 margin/right = 976.0
 margin/bottom = 560.0
@@ -49,26 +47,14 @@ bbcode/bbcode = ""
 visible_characters = -1
 script/script = ExtResource( 1 )
 
-[node name="time" type="Timer" parent="."]
+[node name="timer" type="Timer" parent="."]
 
+process/pause_mode = 2
 process_mode = 1
 wait_time = 0.04
 one_shot = false
 autostart = true
 
-[node name="photo" type="TextureFrame" parent="."]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 48.0
-margin/top = 448.0
-margin/right = 176.0
-margin/bottom = 576.0
-texture = ExtResource( 2 )
-stretch_mode = 0
-
-[connection signal="timeout" from="time" to="text_label" method="_on_time_timeout"]
+[connection signal="timeout" from="timer" to="text_label" method="_on_timer_timeout"]
 
 
